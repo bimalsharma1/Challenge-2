@@ -1,0 +1,26 @@
+<div >
+        <div *ngFor="#d of getData?.MenuPages">
+            
+                <h3>{{d.Name}}</h3>
+                <div  *ngFor="#dt of d.SubMenus" >    
+                      <h4> {{dt.Name}} </h4>
+                      <div >                    
+                        <div *ngFor="#t of dt.Products" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 prod-image">
+                                <p>{{t.Name}}</p>
+                                <p>{{t.Kj}}</p>
+                                <div class="prod-image"><img src={{t.Image}}  class="pizza-image" >
+                                        </div> 
+                                                <p>{{t.Price.Pickup}}</p>
+                                                <button class='btn order next ordernow ' style=" background-color:#b6132c" >ORDER NOW</button>
+                                        </div>
+                                <div>           
+                        </div>    
+                      </div>   
+                      <div>
+                      <br/>
+                        <hr style="clear:both " />
+                      </div>
+                </div>
+                 
+        </div>    
+</div>
