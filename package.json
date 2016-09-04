@@ -6,6 +6,8 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
+    "lite:c": "lite-server --open chrome",
+    "lite:f": "lite-server --open firefox ",
     "typings": "typings",
     "postinstall": "typings install"
   },
