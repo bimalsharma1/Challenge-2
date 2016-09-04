@@ -13,7 +13,7 @@ export class RestyMenuComponent {
         this._httpService.getCurrentMenu()
         .subscribe(
             data => this.getData = data,
-            error => alert(error),
+            error => alert(error),    ///ERROR handling
             () => console.log("Finished")
         );} 
 }
